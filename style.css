@@ -28,6 +28,7 @@ body .titulo {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    transform-style: preserve-3d;
 }
 
 .container .card{
@@ -39,10 +40,21 @@ body .titulo {
     height: 450px;
     border-radius: 20px;
     background-color: black;
+    transform-style: preserve-3d;
 }
 
 .container .card h2{
     color: #fff;
+    transform-style: preserve-3d;
+}
+
+.container .card img:{
+    transform-style: preserve-3d;
+    transition: 0.5s;
+}
+
+.container .card:hover img, .container .card:hover button{
+    transform: translate3d(0,0,100px);
 }
 
 .container .card button{
@@ -54,12 +66,14 @@ body .titulo {
     border: 0px;
     font-weight: 600;
     cursor: pointer;
-}    
+    transform-style: preserve-3d;
+    transition: .5s;
+}
 
 .container .card button:hover{
     box-shadow: 0px 0px 10px 5px #00FF08;
     transform: scale(1.05);
-
+    transform: translate3d(0,0,100px);
 }
 
 .container .card1{
